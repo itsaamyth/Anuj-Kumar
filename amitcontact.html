@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cv.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="form.js"></script>
+    <style type="text/css">
+
+body {
+background-color: transparent;
+}
+
+</style>
+
+
+</head>
+<body>
+    <div class="contact-form">
+        <form role="form" method="post"  id="reused_form">
+          <input type="text" id="firstname" name="firstname" maxlength="50" placeholder="Name"  required="required"  data-error="Fullname is required.">
+          <input type="tel" id="phone" name="phone" required maxlength="50" placeholder="Contact No"  required="required" data-error="Number is required.">
+          <input type="text" id="email" name="email" required maxlength="50" placeholder="Email"  required="required" data-error="Valid email is required.">
+          <textarea type="textarea" id="message" name="message" placeholder="Message"></textarea>
+          <button type="submit" id="btnContactUs" class="button rounded" style="color: white;background-color: #2196f3;" >Submit your Enquiry</button>
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; text-align: center;"> <h3>Sent your message successfully!</h3> </div>
+        <div id="error_message" style="width:100%; height:100%; display:none;text-align: center; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+      </div> 
+</body>
+</html>
